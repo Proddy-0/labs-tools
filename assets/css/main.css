@@ -329,6 +329,20 @@ select.tool-sel { cursor: pointer; }
 .tag-blue  { color: var(--blue); }
 .small { font-size: 0.75rem; color: var(--muted); }
 
+/* ── Back to craft (padrão labs) ── */
+.craft-back {
+  position: fixed; top: 16px; left: 16px; z-index: 999;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: 999px;
+  background: rgba(10,11,13,.78); backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,122,24,.35);
+  color: var(--text); text-decoration: none;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: .8rem; font-weight: 500;
+  transition: border-color .18s, color .18s, transform .18s;
+}
+.craft-back:hover { border-color: var(--amber); color: var(--amber); transform: translateX(-2px); }
+
 /* ── Transitions ── */
 .fade-enter-active, .fade-leave-active { transition: opacity .2s; }
 .fade-enter-from, .fade-leave-to { opacity: 0; }

@@ -45,6 +45,8 @@ onUnmounted(() => window.removeEventListener('keydown', handleEsc))
 <template>
   <div class="wrap">
 
+    <a href="https://craft.proddyt.site" class="craft-back">← craft</a>
+
     <header>
       <div class="header-left">
         <p class="kicker">proddyt labs</p>
